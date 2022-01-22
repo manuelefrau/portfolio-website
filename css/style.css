@@ -61,7 +61,7 @@ a:focus {
 }
 
 a:active { /* selected link */
-  color: blue;
+  color: darkgreen;
 }
 
 .button {
@@ -71,7 +71,7 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid grey; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -90,4 +90,8 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #1c1c1c;
   color: #ffffff;
+}
+
+.menu-link {
+  font-weight: 600;
 }
