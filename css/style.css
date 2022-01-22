@@ -46,7 +46,7 @@ h4 {
 }
 
 a {
-  color: #ff7f50;
+  color: #1c1c1c;
   text-decoration: none; /* No underlining */
 }
 
@@ -54,31 +54,14 @@ a:visited { /* visited link */
   color: grey;
 }
 
-a:hover {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: green;
   text-decoration: underline;
 }
 
 a:active { /* selected link */
   color: blue;
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-}
-
-.button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
 }
 
 .button {
@@ -95,4 +78,16 @@ a:active { /* selected link */
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #1c1c1c;
+  text-transform: uppercase;
+  border: 2px solid #1c1c1c;
+}
+
+.button.contact:hover {
+  background-color: #1c1c1c;
+  color: #ffffff;
 }
