@@ -3,8 +3,8 @@ Colors used:
 (Black): #1C1C1C;
 (White): #FFFFFF;
 (Grey): #7F7F7F;
-(Light green): #87B900;
-(Green): #329B5A;
+(Light blue): #00DBFF;
+(Light blue 2): #00B5D2;
 */
 
 body {
@@ -52,17 +52,17 @@ a {
 }
 
 a:visited {
-  color: #1c1c1c;
+  color: transparent;
 }
 
 a:hover,
 a:focus {
-  color: #87B900;
+  color: #00DBFF;
   text-decoration: underline;
 }
 
 a:active {
-  color: #329B5A;
+  color: #00B5D2;
 }
 
 .hero {
@@ -89,13 +89,14 @@ text-align: left;
   color: black;
   padding: 40px;
   text-align: center;
+  display: block;
   border-top: 1px solid #7F7F7F;
 }
 
 .button {
   display: inline-block;
   background-color: #1C1C1C;
-  color: #FFFFFF; /* needed to override the default link color */
+  color: #FFFFFF;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
