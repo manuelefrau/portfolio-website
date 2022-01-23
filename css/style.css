@@ -7,6 +7,17 @@ Colors used:
 (Light blue 2): #00B5D2;
 */
 
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -84,13 +95,18 @@ padding: 40px;
 text-align: left;
 }
 
+.row {
+padding-bottom: 25px;
+border-bottom: 1px solid #7F7F7F;
+}
+
 .contact {
   background-color: transparent;
   color: black;
   padding: 40px;
   text-align: center;
   display: block;
-  border-top: 1px solid #7F7F7F;
+  border-top: none solid #7F7F7F;
 }
 
 .button {
