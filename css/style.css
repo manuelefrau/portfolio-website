@@ -48,11 +48,11 @@ span {
 
 a {
   color: #1c1c1c;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
 }
 
-a:visited { /* visited link */
-  color: #7F7F7F;
+a:visited {
+  color: #1c1c1c;
 }
 
 a:hover,
@@ -61,7 +61,7 @@ a:focus {
   text-decoration: underline;
 }
 
-a:active { /* selected link */
+a:active {
   color: #329B5A;
 }
 
@@ -70,6 +70,11 @@ background-color: transparent;
 color: black;
 padding: 40px;
 text-align: left;
+}
+
+.hero h1 span {
+display: block;
+font-weight: 400;
 }
 
 .work {
@@ -88,9 +93,9 @@ text-align: left;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #1C1C1C;
-  color: White; /* needed to override the default link color - NOT WORKING !! */
+  color: #FFFFFF; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -98,7 +103,7 @@ text-align: left;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
   text-decoration: none;
 }
 
