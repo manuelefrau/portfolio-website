@@ -5,29 +5,6 @@ Colors used:
 (Grey): #7F7F7F;
 (Light green): #87B900;
 (Green): #329B5A;
-
-
-#hero {
-background-color: transparent;
-color: black;
-padding: 40px;
-text-align: left;
-}
-
-#work {
-background-color: transparent;
-color: black;
-padding: 40px;
-text-align: left;
-}
-
-#contact {
-  background-color: transparent;
-  color: black;
-  padding: 40px;
-  text-align: center;
-  border-top: 1px solid #7F7F7F;
-}
 */
 
 body {
@@ -92,6 +69,28 @@ a:active { /* selected link */
   color: #329B5A;
 }
 
+.hero {
+background-color: transparent;
+color: black;
+padding: 40px;
+text-align: left;
+}
+
+.work {
+background-color: transparent;
+color: black;
+padding: 40px;
+text-align: left;
+}
+
+.contact {
+  background-color: transparent;
+  color: black;
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #7F7F7F;
+}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #1C1C1C;
@@ -117,8 +116,4 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #1c1c1c;
   color: #ffffff;
-}
-
-.menu-link {
-  font-weight: 600;
 }
