@@ -15,9 +15,10 @@
 </head>
 
 <body>
-  <header>
-    <div>
-      <a href="index.html"> <img src="img/logo.svg" alt="Manuele Frau"></a>
+  <header class="*">
+
+    <div class="container">
+      <a href="index.html" class="logo"> <img src="img/logo.svg" alt="Manuele Frau"></a>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -30,19 +31,21 @@
 
   </header>
 
-  <main>
+  <main class="*">
 
     <div>
-      <div>
+      <div class="container">
         <h1>About</h1>
       </div>
     </div>
     <div>
-      <div>
+      <div class="container">
+        <div class="profile">
         <picture>
           <source srcset="img/profile@1x.jpg" media="(max-width:767px)">
           <img src="img/profile@2x.jpg" alt="My Picture">
         </picture>
+        </div>
         <div>
           <div>
             <h2>My Story</h2>
@@ -97,17 +100,16 @@
 
   </main>
 
-  <footer id="contact">
-    <div class="contact">
+  <footer id="contact" class="*">
+    <div class="contact" class="container">
       <h2>Get in touch</h2>
-      <p>I am currently looking for career opportunities. Feel free to contact me by mail or social media</p>
+      <p>I am currently looking for career opportunities.</p>
+      <p>Feel free to contact me by mail or social media</p>
       <div>
         <a href="mailto:manuelefraucontact@gmail.com" class="button contact">Send email</a>
       </div>
       <div>
-        <ul>
-
-
+        <ul class="social">
           <li><a href="https://www.behance.net/manuelefrau" target="_blank">
               <i class="fab fa-behance"></i>
             </a></li>
