@@ -11,11 +11,57 @@ Colors used:
 
 .container {
   padding: 0 15px;
-
 }
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+  padding-left: 40px;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #00B5D2;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  box-shadow: 4px 4px 9px 0px rgba(50, 50, 50, 0.32);
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  font-weight: 600;
+  color: #1C1C1C;
+}
+
+nav > ul > li > a:hover {
+  color: #00DBFF;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  color: #00B5D2;
 }
 
 body {
@@ -69,7 +115,7 @@ a:visited {
 a:hover,
 a:focus {
   color: #00DBFF;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
@@ -77,9 +123,10 @@ a:active {
 }
 
 .hero {
-background-color: transparent;
+background-color: #00B5D2;
+display: inline-block;
 color: black;
-padding: 40px;
+padding: 15px;
 text-align: left;
 }
 
@@ -106,7 +153,17 @@ border-bottom: 1px solid #7F7F7F;
   padding: 40px;
   text-align: center;
   display: block;
-  border-top: none solid #7F7F7F;
+  border-top: 1px solid #7F7F7F;
+}
+
+.social {
+  margin-top: 20px;
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0px;
+  text-align: center;
+  min-width: 150px;
 }
 
 .button {
