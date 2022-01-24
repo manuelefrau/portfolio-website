@@ -11,6 +11,7 @@ Colors used:
 
 .container {
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .row {
@@ -30,10 +31,6 @@ Colors used:
 
 .project {
   margin: 25px 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 header {
@@ -167,12 +164,18 @@ border-bottom: 1px solid #7F7F7F;
 
 .social {
   margin-top: 20px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   width: 100%;
   padding-left: 0px;
   text-align: center;
   min-width: 150px;
+}
+
+.social .fab {
+  font-size: 2em;
+  margin: 0 20px;
 }
 
 .button {
