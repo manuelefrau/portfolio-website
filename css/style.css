@@ -22,6 +22,7 @@ Colors used:
 .logo {
   max-width: 250px;
   display: inline-block;
+  padding-top: 10px;
 }
 
 .profile {
@@ -45,6 +46,7 @@ header {
 nav {
   display: inline-block;
   width: 100%;
+  margin-top: 0.5em;
 }
 
 nav > ul {
@@ -83,7 +85,7 @@ body {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 90px;
   display: inline-block;
 
 }
@@ -193,6 +195,10 @@ border-bottom: 1px solid #7F7F7F;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
+}
+
+.button:visited {
+  color: #ffffff;
 }
 
 .button:hover {
