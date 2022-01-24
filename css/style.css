@@ -15,13 +15,13 @@ Colors used:
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  display: inline-block;
 }
 
 .logo {
   max-width: 250px;
-  padding-left: 40px;
-  display: block;
+  display: inline-block;
 }
 
 .profile {
@@ -37,7 +37,8 @@ header {
   background-color: #00B5D2;
   text-align: center;
   padding: 10px 0;
-  position: relative;
+  position: fixed;
+  width: 100%;
   box-shadow: 4px 4px 9px 0px rgba(50, 50, 50, 0.32);
 }
 
@@ -49,6 +50,8 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 nav > ul > li {
@@ -79,6 +82,11 @@ body {
   color: #1C1C1C;
 }
 
+main {
+  padding-top: 80px;
+  display: inline-block;
+
+}
 img {
   width: 100%;
 }
@@ -132,19 +140,18 @@ a:active {
 background-color: #00B5D2;
 display: inline-block;
 color: black;
-padding: 15ppx;
 text-align: left;
 }
 
 .hero h1 span {
 display: block;
 font-weight: 400;
+font-size: 60%;
 }
 
 .work {
 background-color: transparent;
 color: black;
-padding: 0 15px;
 text-align: left;
 }
 
@@ -174,8 +181,8 @@ border-bottom: 1px solid #7F7F7F;
 }
 
 .social .fab {
-  font-size: 2em;
-  margin: 0 20px;
+  font-size: 1.5em;
+  margin: 0 10px;
 }
 
 .button {
