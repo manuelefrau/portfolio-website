@@ -23,6 +23,15 @@ Colors used:
   display: block;
 }
 
+.profile {
+  max-width: 250px;
+  display: inline-flex;
+}
+
+.project {
+  margin: 25px 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -126,7 +135,7 @@ a:active {
 background-color: #00B5D2;
 display: inline-block;
 color: black;
-padding: 15px;
+padding: 15ppx;
 text-align: left;
 }
 
@@ -138,7 +147,7 @@ font-weight: 400;
 .work {
 background-color: transparent;
 color: black;
-padding: 40px;
+padding: 0 15px;
 text-align: left;
 }
 
@@ -150,7 +159,7 @@ border-bottom: 1px solid #7F7F7F;
 .contact {
   background-color: transparent;
   color: black;
-  padding: 40px;
+  padding: 0 15px;
   text-align: center;
   display: block;
   border-top: 1px solid #7F7F7F;
