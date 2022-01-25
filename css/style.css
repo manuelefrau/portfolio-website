@@ -22,7 +22,6 @@ Colors used:
 .logo {
   max-width: 250px;
   display: inline-block;
-  padding-top: 10px;
 }
 
 .profile {
@@ -45,8 +44,8 @@ header {
 
 nav {
   display: inline-block;
-  width: 100%;
-  margin-top: 0.5em;
+  width: auto;
+  margin-top: 9px;
 }
 
 nav > ul {
@@ -85,7 +84,7 @@ body {
 }
 
 main {
-  padding-top: 90px;
+  padding-top: 80px;
   display: inline-block;
 
 }
@@ -217,3 +216,29 @@ border-bottom: 1px solid #7F7F7F;
   background-color: #1c1c1c;
   color: #ffffff;
 }
+
+@media only screen and (min-width: 540px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 15px;
+  }
+
+  nav {
+    float: right;
+  }
+
+  main {
+    padding-top: 55px;
+  }
+  .col-md-6 {
+  width: 50%;
+}
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  }
+
+@media only screen and (min-width: 1440px) {
+  }
