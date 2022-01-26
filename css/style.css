@@ -16,7 +16,6 @@ Colors used:
 
 .row {
   margin: 25px 0;
-  display: inline-block;
 }
 
 .logo {
@@ -27,7 +26,19 @@ Colors used:
 .profile {
   max-width: 250px;
   display: inline-flex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.profile .image {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: #9f9f9f 2px 4px 8px;
+}
+
 
 .project {
   margin: 25px 0;
@@ -161,6 +172,12 @@ padding-bottom: 25px;
 border-bottom: 1px solid #7F7F7F;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .contact {
   background-color: transparent;
   color: black;
@@ -217,6 +234,11 @@ border-bottom: 1px solid #7F7F7F;
   color: #ffffff;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
 @media only screen and (min-width: 540px) {
   header {
     text-align: unset;
@@ -230,15 +252,20 @@ border-bottom: 1px solid #7F7F7F;
   main {
     padding-top: 55px;
   }
+
   .col-md-6 {
   width: 50%;
-}
-}
-
-
+  }
+  }
 
 @media only screen and (min-width: 1024px) {
+  .col-lg-8 {
+  width: 66%;
+  }
   }
 
 @media only screen and (min-width: 1440px) {
+  .col-xl-4 {
+  width: 33%;
+  }
   }
