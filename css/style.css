@@ -9,11 +9,12 @@ Colors used:
 
 /* Layout styling */
 
-
+* {
+  box-sizing: border-box;
+}
 
 .container {
   padding: 0 15px;
-  box-sizing: border-box;
 }
 
 .container .center {
@@ -86,9 +87,9 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
   color: #00DBFF;
   text-decoration: none;
-  box-shadow: inset 0 2px 0 0 #FFFFFF;
+  box-shadow: inset 0 -2px 0 0 #FFF;
   color: #000;
-  padding-top: 30px;
+  padding-bottom: 11px;
 }
 
 nav > ul > li > a:active {
@@ -188,12 +189,14 @@ display: inline-block;
 color: black;
 text-align: left;
 width: 100%;
+padding: 3em 4em;
 }
 
 .hero h1 span {
 display: block;
 font-weight: 400;
-font-size: 60%;
+font-size: 59%;
+margin-top: 1em;
 }
 
 .work {
@@ -205,6 +208,12 @@ text-align: left;
 .row {
 padding-bottom: 25px;
 border-bottom: 1px solid #7F7F7F;
+}
+
+
+.work .row:last-child {
+padding-bottom: 0;
+border-bottom: none;
 }
 
 .row::after {
@@ -271,11 +280,12 @@ border-bottom: 1px solid #7F7F7F;
   color: #ffffff;
 }
 
-[class*="col-"] {
-  float: left;
-}
-
 @media only screen and (min-width: 540px) {
+
+  [class*="col-"] {
+    float: left;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 15px;
@@ -285,13 +295,21 @@ border-bottom: 1px solid #7F7F7F;
     float: right;
   }
 
+  nav > ul > li > a:hover {
+    color: #00DBFF;
+    text-decoration: none;
+    box-shadow: inset 0 2px 0 0 #FFFFFF;
+    color: #000;
+    padding-top: 30px;
+  }
+
   main {
     padding-top: 55px;
     width: 100%;
   }
 
   div.col-md-about > div {
-    padding-left: 150px;
+    padding-left: 100px;
 
   }
 
@@ -301,17 +319,18 @@ border-bottom: 1px solid #7F7F7F;
   }
 
   .col-md-about {
-    width: 45%;
+    width: 50%;
+    margin-bottom: 2.5em;
   }
   }
 
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-  width: 40%;
+  width: 58.33%;
   }
 
   .col-lg-5 {
-  width: 60%;
+  width: 41.66%;
   }
 
   .container {
@@ -324,7 +343,7 @@ border-bottom: 1px solid #7F7F7F;
 
 @media only screen and (min-width: 1440px) {
   .col-xl-4 {
-  width: 50%;
+  width: 33.33%;
   }
 
   }
