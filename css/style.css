@@ -57,6 +57,7 @@ header {
   text-align: center;
   position: fixed;
   width: 100%;
+  transition: 0.4s;
   box-shadow: 4px 4px 9px 0px rgba(50, 50, 50, 0.32);
 }
 
