@@ -73,7 +73,7 @@ header {
   position: absolute;
   padding-right: 0;
   right: 0;
-  bottom: -3px;
+  top: -3px;
   font-size: 20px;
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .navtoggle.responsive li:last-child  {
-  padding: 0 0 50px;
+  padding: 0 0 14px;
 }
 
 
@@ -199,7 +199,7 @@ a:active {
   color: black;
   text-align: left;
   width: 100%;
-  padding: 3em 4em;
+  padding: 1em 1em;
 }
 
 .hero h1 span {
@@ -350,7 +350,7 @@ a:active {
   }
 
   main {
-    padding-top: 55px;
+    padding-top: 80px;
     width: 100%;
   }
 
@@ -430,3 +430,68 @@ a:active {
   .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
+
+
+  /* Animation 2 */
+
+  /*
+? === === === === === === === === === === === === === === === === ?
+?                                                                 ?
+?   BIRDS                                                         ?
+?                                                                 ?
+? === === === === === === === === === === === === === === === === ?
+*/
+
+:root{
+    /* * Animation variables: */
+    --birds-name:               birds;                                          /*  Specifies a name for the @keyframes animation. */
+    --birds-duration:           10s;                                             /*  Defines how long an animation should take to complete one cycle. */
+    --birds-timing-function:    cubic-bezier(0.280, 0.840, 0.420, 1);           /*  Specifies the speed curve of an animation. */
+    --birds-delay:              1s;                                             /*  Specifies a delay for the start of an animation. */
+    --birds-iteration-count:    infinite;                                       /*  Specifies the number of times an animation should be played. */
+    --birds-direction:          normal;                                         /*  Defines whether an animation should be played forwards, backwards or in alternate cycles. */
+    --birds-fill-mode:          forwards;                                       /*  Retain the style values from the last keyframe when the animation ends. */
+    --birds-play-state:         running;                                        /*  Specifies whether the animation is running or paused. */
+
+
+    /* * Animation properties all together: */
+    --birds:    var(--birds-name)
+                var(--birds-duration)
+                var(--birds-timing-function)
+                var(--birds-delay)
+                var(--birds-iteration-count)
+                var(--birds-fill-mode)
+                var(--birds-play-state);
+}
+
+/* Group should stay still: */
+#g2{
+    position: absolute;
+}
+
+/* Set animations for each browser: */
+#birds{
+    -webkit-animation: var(--birds);    /* * Safari, Chrome, Opera */
+       -moz-animation: var(--birds);    /* * Firefox */
+        -ms-animation: var(--birds);    /* * Internet Explorer */
+         -o-animation: var(--birds);    /* * Opera */
+            animation: var(--birds);    /* * Default */
+
+    /* Set initial placement:   valuse = X, Y, Z */
+    transform:                  translate3d(300px,84px, 0);
+    position:                   relative;
+}
+
+@keyframes birds {
+    0%  {
+        transform: translate3d(300px,84px, 0);
+    }
+
+    50% {
+         transform: translate3d(300px,114px, 0);
+    }
+
+    100%{
+         transform: translate3d(300px,84px, 0);
+    }
+}
